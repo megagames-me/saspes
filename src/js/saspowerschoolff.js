@@ -83,7 +83,7 @@ function main () {
 
 function main_page () {
     const { sem1_col, sem2_col } = getSemesterCols();
-    const second_semester = isSecondSemester();
+    const second_semester = isSecondSemester(sem2_col);
     const current_term = getCurrentTerm();
     const { courses, promises_grade_calc_list } = getCourses(second_semester, sem1_col, sem2_col);
 
